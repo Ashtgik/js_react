@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+     <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+
+    <div id="table"></div>
+    <script type="text/jsx">
+      var Block = React.createClass({
+        render: function() {
+          return (
+            <div>
+                <div className = "header">
+                   <div className = "border">SA 22/00025</div>
+                   <h2>ՊԱՏԱՀԱՐԻ ՎԵՐԱԲԵՐՅԱԼ ՀԱՐՑԱԹԵՐԹԻԿ</h2>
+                   <p>(հեռախոսազանգից ստացված տեղեկություններ)</p>
+                </div>
+
+                <div className="main-info">
+                     <div className="accedent-info">
+                         <div className="accedent-info-part">
+                             <div className="accedent-info-part1">
+                                <p className="text">Հեռախոսազանգի ժամ, օր/տ.Պատահարի ժամ, օր</p>
+
+                             </div>
+                             <div className="accedent-info-part2"></div>
+                         </div>
+                         <div className="accedent-info-part">
+                             <div className="accedent-info-part3"><p className="text">Զանգահարողի / վարորդի անուն,ազգանուն</p>
+                             </div>
+                             <div className="accedent-info-part4"></div>
+                             <div className="accedent-info-part5"></div>
+                         </div>
+                         <div className="accedent-info-part">
+                             <div className="accedent-info-part3"><p className="text">Հեռախոսահամար(ներ)
+                             </p>
+                             </div>
+                             <div className="accedent-info-part4"></div>
+                             <div className="accedent-info-part5"></div>
+                         </div>
+                     </div>
+                     <div className="car-info">
+                        <div className="car-info-part">
+                            <div className="car-info-part1"><p className="text">Ա։ Ավտոմեքենայի մակնիշ, համարանիշ, պայմանագիր</p>
+                            </div>
+                            <div className="car-info-part2"></div>
+                        </div>
+                        <div className="car-info-part">
+
+                         </div>
+                     </div>
+                     <div className="place-info">
+                        <div className="place-info-part">
+                            <div className="place-info-part1"><p className="text">Պատահարի վայր</p></div>
+                            <div className="place-info-part2"></div>
+                       </div>
+                       <div className="place-info-part">
+                           <div className="place-info-part1"><p className="text">Նշումներ</p></div>
+                           <div className="place-info-part2"></div>
+                      </div>
+                     </div>
+                     <div className="others-info">
+                            <div className="others-info-part1"><p className="text">Այլ տեղեկատվություն</p></div>
+                            <div className="others-info-part2"></div>
+                     </div>
+                </div>
+            </div>
+          )
+        }
+      });
+      React.render(
+        <Block/>,
+        document.getElementById('table')
+      );
+    </script>
+  </body>
+</html>
